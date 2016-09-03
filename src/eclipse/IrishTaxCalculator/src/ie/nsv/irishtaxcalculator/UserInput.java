@@ -13,12 +13,12 @@ import android.app.Activity;
 
 public class UserInput extends Activity {
 	TaxRates taxRates = new TaxRates();
-	
+	USCRates uscRates = new USCRates();
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user_input);
-		Toast.makeText(this, Double.toString(taxRates.higherRateOfTax),
+		Toast.makeText(this, Double.toString(uscRates.USCRate(13.00)),
 		Toast.LENGTH_LONG).show();
 	}
 
